@@ -17,6 +17,6 @@ const EVENTS = {
   RETURN_POST: "RETURN_POST",
 };
 
-const ROTA = { ROTA: "8a1bdf96-6821-47cf-bd10-4348d0cc25e1?_raw=1" };
+const ROTA = { FFOCA: process.env.FFOCA };
 
 module.exports = { V1, API_PATH, INTENTS, PARAMETERS, EVENTS, ROTA };
