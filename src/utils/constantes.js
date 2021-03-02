@@ -2,21 +2,22 @@ const API_PATH = "/api";
 const V1 = `${API_PATH}/v1`;
 
 const INTENTS = {
-  SAMPLE: {
-    INTENT_GET_FOFOCA: "2.0.0.0.[hook].get-fofoca",
-    INTENT_POST_FOFOCA: "2.0.0.2.[hook].post-fofoca",
+  EDUCACIONAL: {
+    AULAS_8_ANO: "1.0.0.0-8ano-questoes-aula03", //"1.0.0.0[hook].aulas-8-ano",
   },
 };
 
 const PARAMETERS = {
-  FOFOCA: "fofoca",
+  Q1: "Q1",
+  Q2: "Q1",
+  QUESTIONS: "respostas",
 };
 
 const EVENTS = {
-  SHOW: "SHOW_FOFOCAS",
+  SHOW: "SHOW",
   RETURN_POST: "RETURN_POST",
 };
 
-const ROTA = { FFOCA: process.env.FFOCA };
+const ROUTES = { BASE: process.env.BASE };
 
-module.exports = { V1, API_PATH, INTENTS, PARAMETERS, EVENTS, ROTA };
+module.exports = { V1, API_PATH, INTENTS, PARAMETERS, EVENTS, ROUTES };
