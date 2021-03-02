@@ -13,21 +13,15 @@ const getQuestions = async (req, res) => {
 
   const { data } = await apiEducacional.get(`${ROUTES.BASE}`);
 
-  //const resultQuestions = buildTemplate(data, responseQuestions);
+  const resultQuestions = buildTemplate(data, responseQuestions);
 
-  // const formarToDialogflow = mountResponse(resultQuestions);
+  const formarToDialogflow = mountResponse(resultQuestions);
 
   const paramtrs = {
-    [PARAMETERS.QUESTIONS]: data,
+    [PARAMETERS.QUESTIONS]: formarToDialogflow,
   };
-  console.log(
-    "🚀 ~ file: educaional.js ~ line 23 ~ getQuestions ~ paramtrs",
-    paramtrs
-  );
 
   return buildEvent(EVENTS.SHOW, paramtrs);
 };
 
-const postQuestions = async (req, res) => {};
-
-module.exports = { getQuestions, postQuestions };
+module.exports = { getQuestions };

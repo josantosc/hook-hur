@@ -3,7 +3,7 @@ const V1 = `${API_PATH}/v1`;
 
 const INTENTS = {
   EDUCACIONAL: {
-    AULAS_8_ANO: "1.0.0.0-8ano-questoes-aula03", //"1.0.0.0[hook].aulas-8-ano",
+    AULAS_8_ANO: "1.0.0.0-8ano-questoes-aula03",
   },
 };
 
