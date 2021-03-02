@@ -13,12 +13,12 @@ const getQuestions = async (req, res) => {
 
   const { data } = await apiEducacional.get(`${ROUTES.BASE}`);
 
-  const resultQuestions = buildTemplate(data, responseQuestions);
+  //const resultQuestions = buildTemplate(data, responseQuestions);
 
-  const formarToDialogflow = mountResponse(resultQuestions);
+  // const formarToDialogflow = mountResponse(resultQuestions);
 
   const paramtrs = {
-    [PARAMETERS.QUESTIONS]: formarToDialogflow,
+    [PARAMETERS.QUESTIONS]: "oi",
   };
 
   return buildEvent(EVENTS.SHOW, paramtrs);
