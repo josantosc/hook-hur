@@ -18,8 +18,12 @@ const getQuestions = async (req, res) => {
   // const formarToDialogflow = mountResponse(resultQuestions);
 
   const paramtrs = {
-    [PARAMETERS.QUESTIONS]: "oi",
+    [PARAMETERS.QUESTIONS]: data,
   };
+  console.log(
+    "🚀 ~ file: educaional.js ~ line 23 ~ getQuestions ~ paramtrs",
+    paramtrs
+  );
 
   return buildEvent(EVENTS.SHOW, paramtrs);
 };
