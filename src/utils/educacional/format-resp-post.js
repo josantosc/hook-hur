@@ -20,7 +20,6 @@ const mountResponse = (input) => {
 };
 
 const buildTemplate = (input, data) => {
-  data.shift();
   const result = input.map((el, i) => {
     const result = el.resposta === data[i] ? "Acertou" : "Errou";
     return result;
