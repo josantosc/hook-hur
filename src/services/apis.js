@@ -1,13 +1,13 @@
 const axios = require("axios");
 
-const sampleUrl = require("./urls/sample");
+const educaionalURL = require("./urls/eduacional");
 
-const apiSample = axios.create({
-  baseURL: sampleUrl,
+const apiEducacional = axios.create({
+  baseURL: educaionalURL,
   timeout: 2000,
   headers: { "Content-Type": "application/json" },
 });
 
 module.exports = {
-  apiSample,
+  apiEducacional,
 };
