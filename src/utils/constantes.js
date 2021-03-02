@@ -8,8 +8,6 @@ const INTENTS = {
 };
 
 const PARAMETERS = {
-  Q1: "Q1",
-  Q2: "Q1",
   QUESTIONS: "respostas",
 };
 
